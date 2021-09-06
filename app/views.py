@@ -92,6 +92,7 @@ def view_stories(request):
     )
 
 
+# Create story route
 def create_story(request):
     if request.method == "POST":
         form = newStoryForm(request.POST)
