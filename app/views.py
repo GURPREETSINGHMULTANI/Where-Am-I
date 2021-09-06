@@ -39,8 +39,7 @@ def ajax_filter(request):
         for tribe in Tribe.objects.all():
             latTribe = float(tribe.latitude)
             lngTribe = float(tribe.longitude)
-            print(tribe.name)
-
+            
             # x2,y2 is tribe
             # x1, y1,is User
             tempDistance = math.sqrt(
