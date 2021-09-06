@@ -21,8 +21,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = "q=oiudce*ky#!l9+w1khk0g3mq2*tk-r(gmi!f64+9(u)xid$="
-SECRET_KEY = os.environ.get('SECRET_KEY')
+SECRET_KEY = "q=oiudce*ky#!l9+w1khk0g3mq2*tk-r(gmi!f64+9(u)xid$="
+# SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -128,9 +128,11 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATIC_URL = "/static/"
 
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-)
+print(BASE_DIR);
+
+# STATICFILES_DIRS = (
+#     os.path.join(BASE_DIR, '\\app\\static'),
+# )
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
