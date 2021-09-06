@@ -111,7 +111,7 @@ async function renderMap() {
       let html = ``;
 
       for (let n of name) {
-        html += `<p style='margin: 0;'><a href=http://127.0.0.1:8000/view_result/?name=${n}>${n}</a></p>`;
+        html += `<p style='margin: 0;'><a href="https://where-am-i-kuriushacks.herokuapp.com/view_result/?name=${n}">${n}</a></p>`;
       }
 
       console.log(html);
